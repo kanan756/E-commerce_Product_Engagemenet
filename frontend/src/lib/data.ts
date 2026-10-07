@@ -194,6 +194,7 @@ export const products: Product[] = [
     material: "Resin & Gold Leaf",
     finish: "Polished",
     image: "/Luxe Blue and Gold Crystal Chessboard.png",
+    theme: "Blue Gold",
   },
   {
     id: "15",
