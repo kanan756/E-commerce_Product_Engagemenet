@@ -2,19 +2,6 @@
 
 :root {
   /* =========================================
-     DARK THEME (Pitch Black - Original)
-     Uncomment this and comment the one below to revert
-  ========================================= */
-  /*
-  --background: #0a0a0a;
-  --foreground: #f4ecd8;
-  --gold: #cfa875;
-  --gold-dim: #8b7355;
-  --card-bg: #111111;
-  --border-gold: rgba(207, 168, 117, 0.3);
-  */
-
-  /* =========================================
      TRUE LIGHT THEME (Ivory & Charcoal) - CURRENT
   ========================================= */
   --background: #F9F6F0;
@@ -23,6 +10,24 @@
   --gold-dim: #4B3711;
   --card-bg: #FFFFFF;
   --border-gold: rgba(161, 117, 57, 0.5);
+  
+  --nav-active-text: #000000;
+  --nav-active-border: #000000;
+}
+
+.dark {
+  /* =========================================
+     DARK THEME (Pitch Black - Original)
+  ========================================= */
+  --background: #050505; /* Made slightly darker to match image */
+  --foreground: #f4ecd8;
+  --gold: #cfa875;
+  --gold-dim: #8b7355;
+  --card-bg: #111111;
+  --border-gold: rgba(207, 168, 117, 0.3);
+  
+  --nav-active-text: #cfa875;
+  --nav-active-border: #cfa875;
 }
 
 @theme inline {
@@ -32,6 +37,8 @@
   --color-gold-dim: var(--gold-dim);
   --color-card: var(--card-bg);
   --color-border-gold: var(--border-gold);
+  --color-nav-active-text: var(--nav-active-text);
+  --color-nav-active-border: var(--nav-active-border);
   
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-lato);
@@ -41,10 +48,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
-  font-weight: 600 !important; /* Forces bold text universally */
+  font-weight: 300; /* Elegant thin font for dark mode */
+}
+
+/* Force bold text universally ONLY in light theme */
+html:not(.dark) body {
+  font-weight: 600 !important; 
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), serif;
+  font-weight: 400; /* Elegant normal weight for dark mode */
+}
+
+html:not(.dark) h1, html:not(.dark) h2, html:not(.dark) h3, html:not(.dark) h4, html:not(.dark) h5, html:not(.dark) h6 {
   font-weight: 700 !important;
 }

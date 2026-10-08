@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ShoppingBag, User, Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-[10px] lg:text-xs tracking-widest text-foreground/70">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className={`transition-all duration-300 hover:text-foreground ${pathname === link.href ? 'text-foreground font-semibold border-b border-foreground pb-1' : ''}`}>
+            <Link key={link.href} href={link.href} className={`transition-all duration-300 hover:text-foreground ${pathname === link.href ? 'text-nav-active-text border-b border-nav-active-border pb-1' : ''}`}>
               {link.label}
             </Link>
           ))}
@@ -48,6 +49,7 @@ export default function Navbar() {
 
         {/* Icons */}
         <div className="flex items-center gap-4 md:gap-6 text-foreground/70">
+          <ThemeToggle />
           <button className="hover:text-foreground transition-all duration-300 hidden sm:block" aria-label="User profile">
             <User className="w-5 h-5" strokeWidth={1.5} />
           </button>
