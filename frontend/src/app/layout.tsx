@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Collectible Art. Made with Intention.",
 };
 
+// import ChatWidget from "@/components/layout/ChatWidget";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
@@ -27,12 +29,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${playfair.variable} ${lato.variable} h-full antialiased bg-background text-foreground`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans bg-background" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans bg-background relative" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">
           {children}
         </main>
         <Footer />
+        {/* <ChatWidget /> */}
       </body>
     </html>
   );

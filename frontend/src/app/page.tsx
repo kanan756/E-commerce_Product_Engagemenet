@@ -47,10 +47,10 @@ export default function Home() {
       <section className="relative min-h-[70vh] flex flex-col justify-center px-6 md:px-12 py-20 border-b border-border-gold overflow-hidden">
         {/* Background Subtle Image Slider */}
         <div
-          className="absolute inset-0 bg-cover bg-right opacity-30 z-0 transition-all duration-1000 ease-in-out"
+          className="absolute inset-0 bg-cover bg-right opacity-80 z-0 transition-all duration-1000 ease-in-out"
           style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent z-10" />
 
         <div className="relative z-20 max-w-2xl">
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">

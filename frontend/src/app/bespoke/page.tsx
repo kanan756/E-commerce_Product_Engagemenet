@@ -6,26 +6,22 @@ export default function BespokePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
-        <Image
-          src="/Opulent Blue and Gold Marble Coffee Table.png"
-          alt="Bespoke Design"
-          fill
-          className="object-cover opacity-40 scale-105"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]" />
+      <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
+        {/* Full-width Background Image */}
+        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent z-0" />
         
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-serif mb-6 tracking-wide text-gold">
-            BESPOKE COMMISSIONS
-          </h1>
-          <p className="text-sm md:text-base text-gold-dim tracking-widest uppercase mb-10 max-w-2xl mx-auto leading-relaxed">
+        {/* Left Content */}
+        <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-8">Bespoke Commissions.</h1>
+          <p className="text-foreground/80 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
             Elevate your space with a one-of-a-kind masterpiece. Designed to your exact specifications, handcrafted by master artisans.
           </p>
-          <button className="bg-gold hover:bg-white text-black px-8 py-4 text-xs tracking-widest uppercase transition-colors duration-500 font-semibold">
-            Request a Consultation
-          </button>
+          <div className="flex flex-col sm:flex-row gap-6">
+            <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3 w-max">
+              Request a Consultation <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </section>
 

@@ -38,20 +38,20 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-[10px] lg:text-xs tracking-widest text-gold-dim">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-[10px] lg:text-xs tracking-widest text-foreground/70">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className={`transition-colors hover:text-gold ${pathname === link.href ? 'text-gold' : ''}`}>
+            <Link key={link.href} href={link.href} className={`transition-all duration-300 hover:text-foreground ${pathname === link.href ? 'text-foreground font-semibold border-b border-foreground pb-1' : ''}`}>
               {link.label}
             </Link>
           ))}
         </nav>
 
         {/* Icons */}
-        <div className="flex items-center gap-4 md:gap-6 text-gold-dim">
-          <button className="hover:text-gold transition-colors hidden sm:block" aria-label="User profile">
+        <div className="flex items-center gap-4 md:gap-6 text-foreground/70">
+          <button className="hover:text-foreground transition-all duration-300 hidden sm:block" aria-label="User profile">
             <User className="w-5 h-5" strokeWidth={1.5} />
           </button>
-          <button className="hover:text-gold transition-colors" aria-label="Shopping bag">
+          <button className="hover:text-foreground transition-all duration-300" aria-label="Shopping bag">
             <ShoppingBag className="w-5 h-5" strokeWidth={1.5} />
           </button>
         </div>

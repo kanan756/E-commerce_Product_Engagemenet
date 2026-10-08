@@ -21,26 +21,26 @@ export default function WallArtPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
-      
+
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-[#050505]">
+      <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
         <div className="absolute inset-0 bg-[url('/Sapphire%20Geode%20Crystal%20Wall%20Clock.png')] bg-cover bg-[center_right] opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-transparent z-0" />
-        
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-transparent z-0" />
+
         {/* Left Content */}
         <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Functional Art. For extraordinary spaces.</p>
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Exquisite Wall Art.</h1>
-          <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Time. Texture. Unmistakably Rare.</h2>
-          <p className="text-gray-400 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
+          <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Time. Texture. <br />Unmistakably Rare.</h2>
+          <p className="text-foreground/80 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
             Each KALVÉ wall piece is a singular expression of artistry — crafted to transform blank spaces into mesmerizing focal points of refinement.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
             <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3">
               Request Details <ArrowRight className="w-4 h-4" />
             </button>
-            <button className="border border-border-gold/30 bg-[#111] text-gold px-8 py-4 text-xs tracking-widest uppercase hover:border-gold transition-colors flex items-center justify-center">
+            <button className="border border-border-gold/30 bg-card text-gold px-8 py-4 text-xs tracking-widest uppercase hover:border-gold transition-colors flex items-center justify-center">
               Book Design Consultation
             </button>
           </div>
@@ -48,7 +48,7 @@ export default function WallArtPage() {
       </section>
 
       {/* Signature Pieces */}
-      <section className="px-6 md:px-12 py-20 border-b border-border-gold bg-[#080808]">
+      <section className="px-6 md:px-12 py-20 border-b border-border-gold bg-background">
         <div className="flex items-center gap-4 mb-12">
           <h3 className="text-gold tracking-[0.2em] text-xs uppercase font-medium whitespace-nowrap">Our Signature Wall Art</h3>
           <div className="h-px bg-border-gold/50 flex-1"></div>
@@ -64,26 +64,26 @@ export default function WallArtPage() {
                   <img src={piece.image} alt={piece.name} className="w-full h-full object-contain opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" />
                 ) : (
                   <div className={`w-[90%] h-[90%] bg-gradient-to-br ${piece.color} shadow-[inset_0_-10px_20px_rgba(0,0,0,0.8)] border border-white/10 group-hover:scale-105 transition-transform duration-500 relative`}>
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-[50%] bg-gold/50 blur-[2px]"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-[50%] bg-gold/50 blur-[2px]"></div>
                   </div>
                 )}
               </div>
-              
+
               <h4 className="text-gold text-[11px] tracking-widest uppercase mb-1 h-8">{piece.name}</h4>
-              <p className="text-gray-500 text-[10px] mb-8">{piece.col}</p>
-              
+              <p className="text-foreground/60 text-[10px] mb-8">{piece.col}</p>
+
               <div className="flex flex-col gap-2 mb-8 border-t border-border-gold/20 pt-4">
                 <div className="grid grid-cols-5 gap-2 text-[10px]">
-                  <span className="col-span-2 text-gray-500">Dimensions</span>
-                  <span className="col-span-3 text-gray-300">{piece.dim}</span>
+                  <span className="col-span-2 text-foreground/60">Dimensions</span>
+                  <span className="col-span-3 text-foreground">{piece.dim}</span>
                 </div>
                 <div className="grid grid-cols-5 gap-2 text-[10px]">
-                  <span className="col-span-2 text-gray-500">Material</span>
-                  <span className="col-span-3 text-gray-300">{piece.mat}</span>
+                  <span className="col-span-2 text-foreground/60">Material</span>
+                  <span className="col-span-3 text-foreground">{piece.mat}</span>
                 </div>
                 <div className="grid grid-cols-5 gap-2 text-[10px]">
-                  <span className="col-span-2 text-gray-500">Finish</span>
-                  <span className="col-span-3 text-gray-300">{piece.fin}</span>
+                  <span className="col-span-2 text-foreground/60">Finish</span>
+                  <span className="col-span-3 text-foreground">{piece.fin}</span>
                 </div>
               </div>
 
@@ -100,7 +100,7 @@ export default function WallArtPage() {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/3 border-r border-border-gold/20 pr-8">
             <h3 className="text-gold tracking-widest text-sm uppercase mb-4">Curated by Theme. Customized by you.</h3>
-            <p className="text-gray-400 text-xs leading-relaxed mb-8">
+            <p className="text-foreground/80 text-xs leading-relaxed mb-8">
               From colour and finish to size and detailing — each piece can be tailored to your vision. Choose a theme or collaborate with our design team to create something truly one-of-one.
             </p>
             <button className="border border-border-gold text-gold px-6 py-3 text-[10px] tracking-widest uppercase hover:bg-gold/10 transition-colors flex items-center gap-3">
@@ -112,7 +112,7 @@ export default function WallArtPage() {
               <div key={theme.name} className="flex flex-col items-center text-center group cursor-pointer">
                 <div className={`w-20 h-20 rounded-full mb-6 border border-border-gold bg-gradient-to-br ${theme.color} shadow-inner group-hover:scale-110 transition-transform duration-300`}></div>
                 <h4 className="text-gold text-[10px] tracking-widest uppercase mb-2">{theme.name}</h4>
-                <p className="text-gray-500 text-[10px] leading-relaxed max-w-[100px]">{theme.desc}</p>
+                <p className="text-foreground/60 text-[10px] leading-relaxed max-w-[100px]">{theme.desc}</p>
               </div>
             ))}
           </div>
