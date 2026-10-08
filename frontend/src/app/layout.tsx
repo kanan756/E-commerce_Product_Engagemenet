@@ -3,7 +3,6 @@ import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -31,19 +30,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans bg-background relative" suppressHydrationWarning>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
           <Navbar />
           <main className="flex-1">
             {children}
           </main>
           <Footer />
           {/* <ChatWidget /> */}
-        </ThemeProvider>
       </body>
     </html>
   );

@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ShoppingBag, User, Menu, X } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -49,7 +48,6 @@ export default function Navbar() {
 
         {/* Icons */}
         <div className="flex items-center gap-4 md:gap-6 text-foreground/70">
-          <ThemeToggle />
           <button className="hover:text-foreground transition-all duration-300 hidden sm:block" aria-label="User profile">
             <User className="w-5 h-5" strokeWidth={1.5} />
           </button>
