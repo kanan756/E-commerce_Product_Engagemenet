@@ -3,26 +3,26 @@
 :root {
   /* =========================================
      DARK THEME (Original)
-     Uncomment this block and comment out the LIGHT THEME block below to revert.
   ========================================= */
-  /*
   --background: #0a0a0a;
   --foreground: #f4ecd8;
   --gold: #cfa875;
   --gold-dim: #8b7355;
   --card-bg: #111111;
   --border-gold: rgba(207, 168, 117, 0.3);
-  */
 
   /* =========================================
-     LIGHT THEME (Current)
+     LIGHT THEME
+     Uncomment this block and comment out the DARK THEME block above to switch to Light mode.
   ========================================= */
+  /*
   --background: #fdfbf7;
   --foreground: #1a1a1a;
   --gold: #b58d55;
   --gold-dim: #98784d;
   --card-bg: #ffffff;
   --border-gold: rgba(181, 141, 85, 0.4);
+  */
 }
 
 @theme inline {
