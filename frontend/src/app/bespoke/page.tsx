@@ -9,7 +9,7 @@ export default function BespokePage() {
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
         <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] opacity-100 dark:opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 from-20% md:from-10% via-background/80 md:via-background/40 via-70% md:via-40% to-transparent md:to-60% dark:from-background dark:via-background/90 dark:to-background/40 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/50 via-50% to-background/0 to-60% z-0" />
         
         {/* Left Content */}
         <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">

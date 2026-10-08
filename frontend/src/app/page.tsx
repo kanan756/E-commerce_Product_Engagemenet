@@ -50,7 +50,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-right opacity-100 dark:opacity-40 z-0 transition-all duration-1000 ease-in-out"
           style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 from-20% md:from-10% via-background/80 md:via-background/40 via-70% md:via-40% to-transparent md:to-60% dark:from-background dark:via-background/90 dark:to-background/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/50 via-50% to-background/0 to-60% z-10" />
 
         <div className="relative z-20 max-w-2xl">
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
