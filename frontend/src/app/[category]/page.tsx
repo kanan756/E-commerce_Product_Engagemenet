@@ -27,13 +27,13 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
   const displayTitle = resolvedParams.category.replace("-", " ");
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0a0a0a]">
+    <div className="flex flex-col min-h-screen bg-background">
       {/* Category Hero */}
       <section className="py-20 px-6 border-b border-border-gold flex flex-col items-center justify-center text-center">
         <p className="text-gold uppercase tracking-widest text-xs mb-4 font-semibold">
           Curated Selection
         </p>
-        <h1 className="text-5xl md:text-6xl font-serif text-[#f4ecd8] uppercase tracking-wider mb-6">
+        <h1 className="text-5xl md:text-6xl font-serif text-foreground uppercase tracking-wider mb-6">
           {displayTitle}
         </h1>
         <p className="text-gold-dim text-sm max-w-xl mx-auto leading-relaxed">
@@ -53,7 +53,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         {categoryProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 border-l border-t border-border-gold">
             {categoryProducts.map((product) => (
-              <div key={product.id} className="group border-r border-b border-border-gold p-6 flex flex-col bg-[#0a0a0a] hover:bg-[#111111] transition-colors">
+              <div key={product.id} className="group border-r border-b border-border-gold p-6 flex flex-col bg-background hover:bg-card transition-colors">
                 <Link href={`/products/${product.id}`} className="block relative aspect-square mb-6 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img 

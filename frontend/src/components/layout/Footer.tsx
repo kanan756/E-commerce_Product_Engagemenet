@@ -4,7 +4,7 @@ import { Diamond, CheckCircle, Package, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-border-gold mt-auto text-gold-dim">
+    <footer className="bg-background border-t border-border-gold mt-auto text-gold-dim">
       <div className="container mx-auto px-6 py-16">
 
         {/* Value Props Section matching KALVE */}

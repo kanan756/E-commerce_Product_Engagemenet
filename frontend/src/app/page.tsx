@@ -42,7 +42,7 @@ export default function Home() {
   });
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0a0a0a]">
+    <div className="flex flex-col min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex flex-col justify-center px-6 md:px-12 py-20 border-b border-border-gold overflow-hidden">
         {/* Background Subtle Image Slider */}
@@ -56,19 +56,19 @@ export default function Home() {
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
             Collectible Art. Made with Intention.
           </p>
-          <h1 className="text-5xl md:text-7xl font-serif text-[#f4ecd8] leading-tight mb-4">
+          <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-tight mb-4">
             Collections
             <br />
             <span className="italic text-gold font-light">Rarity. Design. Legacy.</span>
           </h1>
-          <p className="text-white text-sm leading-relaxed max-w-md mt-6">
+          <p className="text-foreground text-sm leading-relaxed max-w-md mt-6">
             Curated expressions of craftsmanship and rare materials. Each piece is conceived to be timeless, distinctive, and eternally collected.
           </p>
         </div>
       </section>
 
       {/* Categories Navigation Bar */}
-      <div className="border-b border-border-gold bg-[#0a0a0a] sticky top-28 z-40">
+      <div className="border-b border-border-gold bg-background sticky top-28 z-40">
         <div className="container mx-auto px-4 overflow-x-auto">
           <ul className="flex items-center min-w-max w-full justify-between">
             {categories.map((cat, idx) => {
@@ -114,7 +114,7 @@ export default function Home() {
       <section className="container mx-auto min-h-[50vh]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-l border-border-gold">
           {filteredProducts.map((product) => (
-            <div key={product.id} className="group border-r border-b border-border-gold p-6 flex flex-col bg-[#0a0a0a] hover:bg-[#111111] transition-colors">
+            <div key={product.id} className="group border-r border-b border-border-gold p-6 flex flex-col bg-background hover:bg-card transition-colors">
               <Link href={`/products/${product.id}`} className="block relative aspect-square mb-6 overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

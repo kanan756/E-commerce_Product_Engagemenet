@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function BespokePage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center overflow-hidden">
         <Image
@@ -32,7 +32,7 @@ export default function BespokePage() {
       {/* The Process */}
       <section className="container mx-auto px-6 py-24 md:py-32 border-b border-border-gold">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-serif text-white tracking-wide">THE ATELIER PROCESS</h2>
+          <h2 className="text-2xl md:text-3xl font-serif text-foreground tracking-wide">THE ATELIER PROCESS</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
@@ -63,7 +63,7 @@ export default function BespokePage() {
       {/* Inquiry Form */}
       <section className="container mx-auto px-6 py-24 md:py-32 max-w-3xl">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-serif text-white tracking-wide mb-4">COMMISSION AN ARTWORK</h2>
+          <h2 className="text-2xl md:text-3xl font-serif text-foreground tracking-wide mb-4">COMMISSION AN ARTWORK</h2>
           <p className="text-gold-dim text-sm tracking-wider">
             Begin the journey of creating your exclusive piece. Our head of design will contact you within 24 hours.
           </p>
@@ -73,17 +73,17 @@ export default function BespokePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <label className="block text-xs tracking-widest text-gold-dim mb-3 uppercase">Full Name</label>
-              <input type="text" className="w-full bg-transparent border-b border-border-gold pb-2 text-white focus:outline-none focus:border-gold transition-colors text-sm" placeholder="Your Name" />
+              <input type="text" className="w-full bg-transparent border-b border-border-gold pb-2 text-foreground focus:outline-none focus:border-gold transition-colors text-sm" placeholder="Your Name" />
             </div>
             <div>
               <label className="block text-xs tracking-widest text-gold-dim mb-3 uppercase">Email Address</label>
-              <input type="email" className="w-full bg-transparent border-b border-border-gold pb-2 text-white focus:outline-none focus:border-gold transition-colors text-sm" placeholder="contact@example.com" />
+              <input type="email" className="w-full bg-transparent border-b border-border-gold pb-2 text-foreground focus:outline-none focus:border-gold transition-colors text-sm" placeholder="contact@example.com" />
             </div>
           </div>
           
           <div>
             <label className="block text-xs tracking-widest text-gold-dim mb-3 uppercase">Project Category</label>
-            <select className="w-full bg-[#0a0a0a] border-b border-border-gold pb-2 text-white focus:outline-none focus:border-gold transition-colors text-sm cursor-pointer appearance-none">
+            <select className="w-full bg-background border-b border-border-gold pb-2 text-foreground focus:outline-none focus:border-gold transition-colors text-sm cursor-pointer appearance-none">
               <option>Custom Chessboard</option>
               <option>Bespoke Table</option>
               <option>Sculptural Basin</option>
@@ -94,7 +94,7 @@ export default function BespokePage() {
           
           <div>
             <label className="block text-xs tracking-widest text-gold-dim mb-3 uppercase">Project Details & Vision</label>
-            <textarea rows={5} className="w-full bg-transparent border-b border-border-gold pb-2 text-white focus:outline-none focus:border-gold transition-colors text-sm resize-none" placeholder="Describe the materials, dimensions, and aesthetic you envision..." />
+            <textarea rows={5} className="w-full bg-transparent border-b border-border-gold pb-2 text-foreground focus:outline-none focus:border-gold transition-colors text-sm resize-none" placeholder="Describe the materials, dimensions, and aesthetic you envision..." />
           </div>
           
           <div className="pt-8 text-center">

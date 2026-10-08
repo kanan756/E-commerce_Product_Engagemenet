@@ -24,10 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${lato.variable} h-full antialiased bg-[#0a0a0a] text-[#f4ecd8]`}
+      className={`${playfair.variable} ${lato.variable} h-full antialiased bg-background text-foreground`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#0a0a0a]" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans bg-background" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1">
           {children}

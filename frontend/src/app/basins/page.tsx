@@ -20,7 +20,7 @@ export default function BasinsPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#0a0a0a] text-gray-200 max-w-[1600px] mx-auto">
+    <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
       
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-[#050505]">
@@ -31,7 +31,7 @@ export default function BasinsPage() {
         {/* Left Content */}
         <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Functional Art. For extraordinary spaces.</p>
-          <h1 className="text-5xl md:text-6xl font-serif text-white mb-4">Statement Basins.</h1>
+          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Statement Basins.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Sculptural. Functional. Unmistakably Rare.</h2>
           <p className="text-gray-400 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
             Each KALVÉ basin is a singular expression of artistry — sculpted in premium resin and finished by hand to transform every interior into a statement of refinement.
@@ -56,7 +56,7 @@ export default function BasinsPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {basins.map((basin) => (
-            <div key={basin.name} className="border border-border-gold/30 p-6 bg-[#0a0a0a] flex flex-col group hover:border-gold transition-colors">
+            <div key={basin.name} className="border border-border-gold/30 p-6 bg-background flex flex-col group hover:border-gold transition-colors">
               {/* Basin Image or Simulation */}
               <div className="flex items-center justify-center mb-6 w-full relative overflow-hidden rounded-sm bg-black/20 aspect-[4/3]">
                 {basin.image ? (

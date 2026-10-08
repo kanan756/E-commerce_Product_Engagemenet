@@ -31,11 +31,11 @@ const articles = [
 
 export default function JournalPage() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <section className="container mx-auto px-6 py-24 md:py-32 border-b border-border-gold">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-serif mb-6 tracking-wide text-white">
+          <h1 className="text-4xl md:text-6xl font-serif mb-6 tracking-wide text-foreground">
             THE JOURNAL
           </h1>
           <p className="text-sm md:text-base text-gold-dim tracking-widest uppercase leading-relaxed">
@@ -64,7 +64,7 @@ export default function JournalPage() {
             <p className="text-gold-dim text-sm leading-relaxed mb-10">
               How a strategic game from antiquity transformed into the ultimate centerpiece of modern luxury living rooms. We dive into the architectural significance of our crystal and gold leaf chess sets.
             </p>
-            <Link href="/journal" className="group flex items-center gap-3 text-gold text-xs tracking-widest uppercase hover:text-white transition-colors duration-500 w-max">
+            <Link href="/journal" className="group flex items-center gap-3 text-gold text-xs tracking-widest uppercase hover:text-foreground transition-colors duration-500 w-max">
               Read the Editorial
               <ArrowRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-2" />
             </Link>

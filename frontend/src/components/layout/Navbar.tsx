@@ -25,7 +25,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#0a0a0a] border-b border-border-gold">
+    <header className="sticky top-0 z-50 w-full bg-background border-b border-border-gold">
       <div className="container mx-auto px-6 h-28 flex items-center justify-between">
         {/* Mobile Menu Button */}
         <button className="md:hidden text-gold-dim hover:text-gold transition-colors" onClick={toggleMenu} aria-label="Toggle menu">
@@ -59,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-28 left-0 w-full bg-[#0a0a0a] border-b border-border-gold flex flex-col shadow-2xl py-6 px-6 max-h-[calc(100vh-7rem)] overflow-y-auto">
+        <div className="md:hidden absolute top-28 left-0 w-full bg-background border-b border-border-gold flex flex-col shadow-2xl py-6 px-6 max-h-[calc(100vh-7rem)] overflow-y-auto">
           {navLinks.map((link) => (
             <Link 
               key={link.href} 
