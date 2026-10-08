@@ -34,7 +34,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex flex-col items-center justify-center mx-auto md:mx-0">
-          <Image src="/logo-removebg-preview.png" alt="KALVÉ Logo" width={240} height={100} className="object-contain w-auto h-[70px] md:h-[100px]" priority />
+          <Image src="/Kalvé_Gold_Monogram_Emblem-removebg-preview.png" alt="KALVÉ Logo" width={240} height={100} className="object-contain w-auto h-[70px] md:h-[100px]" priority />
         </Link>
 
         {/* Desktop Navigation */}

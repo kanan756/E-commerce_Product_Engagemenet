@@ -53,7 +53,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <Image src="/footer_logo-removebg-preview.png" alt="KALVÉ Logo" width={280} height={180} className="object-contain w-auto h-32 scale-125 origin-left" />
+              <Image src="/KALVÉ__Art_Made_Rare-removebg-preview.png" alt="KALVÉ Logo" width={280} height={180} className="object-contain w-auto h-32 scale-125 origin-left" />
             </Link>
             <p className="text-sm max-w-sm mb-6 leading-relaxed">
               Collectible art made with intention. Curated expressions of craftsmanship and rare materials.
