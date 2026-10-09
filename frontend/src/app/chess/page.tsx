@@ -25,7 +25,7 @@ export default function ChessPage() {
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Luxe%20Blue%20and%20Gold%20Crystal%20Chessboard.png')] bg-cover bg-[center_right] z-0" />
+        <div className="absolute inset-0 bg-[url('/chess_banner.png')] bg-cover bg-[center_right] z-0" />
         
         {/* Smooth Seamless Gradient Fade */}
         <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/80 via-50% to-transparent to-70% z-10" />
