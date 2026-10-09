@@ -33,7 +33,7 @@ export default function JournalPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <section className="container mx-auto px-6 py-24 md:py-32 border-b border-border-gold">
+      <section className="px-8 md:px-16 lg:px-24 py-24 md:py-32 border-b border-border-gold">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-serif mb-6 tracking-wide text-foreground">
             THE JOURNAL
@@ -45,7 +45,7 @@ export default function JournalPage() {
       </section>
 
       {/* Featured Article */}
-      <section className="container mx-auto px-6 py-16 md:py-24 border-b border-border-gold">
+      <section className="px-8 md:px-16 lg:px-24 py-16 md:py-24 border-b border-border-gold">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div className="relative aspect-[4/3] w-full group overflow-hidden">
             <Image
@@ -73,7 +73,7 @@ export default function JournalPage() {
       </section>
 
       {/* Article Grid */}
-      <section className="container mx-auto px-6 py-16 md:py-24">
+      <section className="px-8 md:px-16 lg:px-24 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {articles.map((article) => (
             <article key={article.id} className="group cursor-pointer">

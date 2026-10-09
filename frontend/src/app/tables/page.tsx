@@ -18,7 +18,7 @@ export default function TablesPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
