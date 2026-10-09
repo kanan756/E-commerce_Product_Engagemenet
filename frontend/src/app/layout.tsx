@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "Collectible Art. Made with Intention.",
 };
 
-// import ChatWidget from "@/components/layout/ChatWidget";
+import ChatWidget from "@/components/layout/ChatWidget";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
           <Footer />
-          {/* <ChatWidget /> */}
+          <ChatWidget />
       </body>
     </html>
   );

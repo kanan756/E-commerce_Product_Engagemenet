@@ -47,19 +47,19 @@ export default function Home() {
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image Slider */}
         <div
-          className="absolute inset-0 bg-cover bg-[center_right] transition-all duration-1000 ease-in-out z-0"
+          className="absolute inset-0 bg-cover bg-center md:bg-[center_right] transition-all duration-1000 ease-in-out z-0"
           style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
         />
         
         {/* Smooth Seamless Gradient Fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/80 via-50% to-transparent to-70% z-10" />
+        <div className="absolute inset-0 bg-background/60 md:bg-background/0 md:bg-gradient-to-r md:from-background md:from-30% md:via-background/80 md:via-50% md:to-transparent md:to-70% z-10" />
 
         {/* Left Content */}
-        <div className="relative z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 max-w-3xl">
-          <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
+        <div className="relative z-20 flex flex-col justify-center px-6 md:px-16 lg:px-24 py-20 max-w-3xl">
+          <p className="text-gold uppercase tracking-widest text-[10px] md:text-xs mb-4 md:mb-6 font-semibold">
             Collectible Art. Made with Intention.
           </p>
-          <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-foreground leading-tight mb-4">
             Collections
             <br />
             <span className="italic text-gold font-light">Rarity. Design. Legacy.</span>
