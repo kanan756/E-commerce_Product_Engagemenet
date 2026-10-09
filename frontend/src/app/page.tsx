@@ -11,10 +11,10 @@ export default function Home() {
   const [heroImageIndex, setHeroImageIndex] = useState(0);
 
   const heroImages = [
-    "/Sink  Blue and Gold.png",
-    "/Luxe Blue and Gold Crystal Chessboard.png",
-    "/Opulent Blue and Gold Marble Coffee Table.png",
-    "/Sapphire Geode Crystal Wall Clock.png"
+    "/sink_banner.png",
+    "/chess_banner.png",
+    "/Table_banner.png",
+    "/clock_banner.png"
   ];
 
   useEffect(() => {
