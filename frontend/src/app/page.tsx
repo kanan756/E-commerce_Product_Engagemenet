@@ -50,9 +50,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-right opacity-100 dark:opacity-40 z-0 transition-all duration-1000 ease-in-out"
           style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/50 via-50% to-transparent to-60% z-10" />
-
-        <div className="relative z-20 max-w-2xl">
+        <div className="relative z-20 max-w-2xl bg-background/95 backdrop-blur-md p-8 md:p-12 border border-border-gold/20 shadow-xl">
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
             Collectible Art. Made with Intention.
           </p>

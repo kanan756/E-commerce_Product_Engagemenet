@@ -8,10 +8,8 @@ export default function ContactPage() {
       <section className="relative min-h-[50vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
         <div className="absolute inset-0 bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-[center_top] opacity-100 dark:opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/50 via-50% to-transparent to-60% z-0" />
-        
         {/* Left Content */}
-        <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">
+        <div className="px-8 md:px-16 py-12 md:py-16 mx-6 md:mx-16 z-10 relative max-w-2xl bg-background/95 backdrop-blur-md border border-border-gold/20 shadow-xl">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Connect with our atelier.</p>
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Private Commissions.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Enquire. Collaborate. Create.</h2>

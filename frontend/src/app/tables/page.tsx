@@ -24,10 +24,8 @@ export default function TablesPage() {
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
         <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] opacity-100 dark:opacity-40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/50 via-50% to-transparent to-60% z-0" />
-
         {/* Left Content */}
-        <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">
+        <div className="px-8 md:px-16 py-12 md:py-16 mx-6 md:mx-16 z-10 relative max-w-2xl bg-background/95 backdrop-blur-md border border-border-gold/20 shadow-xl">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Bespoke Furniture. For extraordinary spaces.</p>
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Signature Tables.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Gather. Dine.<br /> Unmistakably Rare.</h2>

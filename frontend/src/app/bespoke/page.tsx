@@ -9,10 +9,9 @@ export default function BespokePage() {
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
         <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] opacity-100 dark:opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/50 via-50% to-transparent to-60% z-0" />
         
         {/* Left Content */}
-        <div className="px-6 md:px-16 py-20 z-10 relative max-w-3xl">
+        <div className="px-8 md:px-16 py-12 md:py-16 mx-6 md:mx-16 z-10 relative max-w-2xl bg-background/95 backdrop-blur-md border border-border-gold/20 shadow-xl">
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-8">Bespoke Commissions.</h1>
           <p className="text-foreground/80 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
             Elevate your space with a one-of-a-kind masterpiece. Designed to your exact specifications, handcrafted by master artisans.
