@@ -5,12 +5,15 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] grid grid-cols-1 lg:grid-cols-2 border-b border-border-gold overflow-hidden">
+      <section className="relative min-h-[50vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-center z-0" />
+        <div className="absolute inset-0 bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-[center_top] z-0" />
+        
+        {/* Smooth Seamless Gradient Fade */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/80 via-50% to-transparent to-70% z-10" />
 
-        {/* Left Column: Text with Glassmorphism */}
-        <div className="relative z-10 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 bg-background/85 backdrop-blur-md lg:border-r border-border-gold/30 order-2 lg:order-1">
+        {/* Left Content */}
+        <div className="relative z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 max-w-3xl">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Connect with our atelier.</p>
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Private Commissions.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Enquire. Collaborate. Create.</h2>
@@ -18,9 +21,6 @@ export default function ContactPage() {
             Whether you seek to acquire a signature piece or commission a bespoke creation tailored to your space, our design team is at your disposal.
           </p>
         </div>
-        
-        {/* Right Column: Empty to show clear image */}
-        <div className="relative z-10 w-full min-h-[40vh] lg:min-h-full order-1 lg:order-2" />
       </section>
 
       {/* Main Contact Section */}

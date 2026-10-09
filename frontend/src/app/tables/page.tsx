@@ -21,12 +21,15 @@ export default function TablesPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] grid grid-cols-1 lg:grid-cols-2 border-b border-border-gold overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
         {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-center z-0" />
+        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] z-0" />
+        
+        {/* Smooth Seamless Gradient Fade */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/80 via-50% to-transparent to-70% z-10" />
 
-        {/* Left Column: Text with Glassmorphism */}
-        <div className="relative z-10 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 bg-background/85 backdrop-blur-md lg:border-r border-border-gold/30 order-2 lg:order-1">
+        {/* Left Content */}
+        <div className="relative z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 max-w-3xl">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Bespoke Furniture. For extraordinary spaces.</p>
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Signature Tables.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Gather. Dine. Unmistakably Rare.</h2>
@@ -34,17 +37,14 @@ export default function TablesPage() {
             Each KALVÉ table is a singular expression of artistry — blending premium resin with exquisite materials to create breathtaking centerpieces that anchor your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
-            <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3">
+            <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3 w-max">
               Request Details <ArrowRight className="w-4 h-4" />
             </button>
-            <button className="border border-border-gold/30 bg-card text-gold px-8 py-4 text-xs tracking-widest uppercase hover:border-gold transition-colors flex items-center justify-center">
+            <button className="border border-border-gold/30 bg-card text-gold px-8 py-4 text-xs tracking-widest uppercase hover:border-gold transition-colors flex items-center justify-center w-max">
               Book Design Consultation
             </button>
           </div>
         </div>
-        
-        {/* Right Column: Empty to show clear image */}
-        <div className="relative z-10 w-full min-h-[50vh] lg:min-h-full order-1 lg:order-2" />
       </section>
 
       {/* Signature Pieces */}
