@@ -6,23 +6,22 @@ export default function BespokePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden border-b border-border-gold">
-        {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-center z-0" />
-        <div className="absolute inset-0 bg-black/65 z-10" />
-        
-        {/* Content */}
-        <div className="relative z-20 max-w-3xl px-6 flex flex-col items-center">
-          <h1 className="text-5xl md:text-6xl font-serif text-white mb-8">Bespoke Commissions.</h1>
-          <p className="text-white/80 text-sm md:text-[15px] leading-relaxed max-w-2xl mb-12">
+      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-border-gold bg-background">
+        {/* Left Column: Text */}
+        <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 order-2 lg:order-1">
+          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-8">Bespoke Commissions.</h1>
+          <p className="text-foreground/80 text-sm md:text-[15px] leading-relaxed max-w-xl mb-12">
             Elevate your space with a one-of-a-kind masterpiece. Designed to your exact specifications, handcrafted by master artisans.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto">
             <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3 w-max">
               Request a Consultation <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
+        
+        {/* Right Column: Image */}
+        <div className="relative w-full min-h-[50vh] lg:min-h-full bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-center order-1 lg:order-2 border-b lg:border-b-0 lg:border-l border-border-gold" />
       </section>
 
       {/* The Process */}

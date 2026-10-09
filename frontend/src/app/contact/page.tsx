@@ -5,20 +5,19 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex flex-col items-center justify-center text-center overflow-hidden border-b border-border-gold">
-        {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-center z-0" />
-        <div className="absolute inset-0 bg-black/65 z-10" />
-        
-        {/* Content */}
-        <div className="relative z-20 max-w-3xl px-6 flex flex-col items-center">
+      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[50vh] border-b border-border-gold bg-background">
+        {/* Left Column: Text */}
+        <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 order-2 lg:order-1">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Connect with our atelier.</p>
-          <h1 className="text-5xl md:text-6xl font-serif text-white mb-4">Private Commissions.</h1>
+          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Private Commissions.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Enquire. Collaborate. Create.</h2>
-          <p className="text-white/80 text-sm leading-relaxed max-w-xl mb-12">
+          <p className="text-foreground/80 text-sm leading-relaxed max-w-xl mb-12">
             Whether you seek to acquire a signature piece or commission a bespoke creation tailored to your space, our design team is at your disposal.
           </p>
         </div>
+        
+        {/* Right Column: Image */}
+        <div className="relative w-full min-h-[40vh] lg:min-h-full bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-center order-1 lg:order-2 border-b lg:border-b-0 lg:border-l border-border-gold" />
       </section>
 
       {/* Main Contact Section */}

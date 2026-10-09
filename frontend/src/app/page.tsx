@@ -44,28 +44,27 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden">
-        {/* Background Subtle Image Slider */}
-        <div
-          className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out z-0"
-          style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
-        />
-        {/* Dark Overlay over the whole image */}
-        <div className="absolute inset-0 bg-black/65 z-10" />
-
-        <div className="relative z-20 max-w-4xl px-6 flex flex-col items-center">
+      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-border-gold bg-background">
+        {/* Left Column: Text */}
+        <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 order-2 lg:order-1">
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
             Collectible Art. Made with Intention.
           </p>
-          <h1 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-4">
+          <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-tight mb-4">
             Collections
             <br />
             <span className="italic text-gold font-light">Rarity. Design. Legacy.</span>
           </h1>
-          <p className="text-white/80 text-sm leading-relaxed max-w-xl mt-6">
+          <p className="text-foreground/80 text-sm leading-relaxed max-w-xl mt-6">
             Curated expressions of craftsmanship and rare materials. Each piece is conceived to be timeless, distinctive, and eternally collected.
           </p>
         </div>
+
+        {/* Right Column: Image Slider */}
+        <div 
+          className="relative w-full min-h-[50vh] lg:min-h-full bg-cover bg-center order-1 lg:order-2 border-b lg:border-b-0 lg:border-l border-border-gold transition-all duration-1000 ease-in-out"
+          style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
+        />
       </section>
 
       {/* Categories Navigation Bar */}
