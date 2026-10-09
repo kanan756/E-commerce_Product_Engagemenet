@@ -7,12 +7,11 @@ export default function BespokePage() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
-        {/* Adjusted Background Image */}
-        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-[length:100%_auto] md:bg-[length:55%_auto] lg:bg-[length:45%_auto] bg-right md:bg-[right_5%_center] bg-no-repeat z-0" />
+        {/* Full-width Background Image */}
+        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] z-0" />
         
         {/* Smooth Seamless Gradient Fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background from-40% via-background/80 via-60% to-transparent to-80% z-10 hidden md:block" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background from-40% via-background/80 via-60% to-transparent to-80% z-10 md:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background from-30% via-background/80 via-50% to-transparent to-70% z-10" />
 
         {/* Left Content */}
         <div className="relative z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 max-w-3xl">
