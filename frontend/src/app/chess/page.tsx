@@ -23,22 +23,24 @@ export default function ChessPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden border-b border-border-gold">
         {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Luxe%20Blue%20and%20Gold%20Crystal%20Chessboard.png')] bg-cover bg-[center_right] opacity-100 dark:opacity-40" />
-        {/* Left Content */}
-        <div className="px-8 md:px-16 py-12 md:py-16 mx-6 md:mx-16 z-10 relative max-w-2xl bg-background/95 backdrop-blur-md border border-border-gold/20 shadow-xl">
+        <div className="absolute inset-0 bg-[url('/Luxe%20Blue%20and%20Gold%20Crystal%20Chessboard.png')] bg-cover bg-center z-0" />
+        <div className="absolute inset-0 bg-black/65 z-10" />
+
+        {/* Content */}
+        <div className="relative z-20 max-w-3xl px-6 flex flex-col items-center">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Strategic Art. For extraordinary spaces.</p>
-          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Masterpiece Chess.</h1>
-          <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Tactical. Beautiful. <br />Unmistakably Rare.</h2>
-          <p className="text-foreground/80 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
+          <h1 className="text-5xl md:text-6xl font-serif text-white mb-4">Masterpiece Chess.</h1>
+          <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Tactical. Beautiful. Unmistakably Rare.</h2>
+          <p className="text-white/80 text-sm md:text-[15px] leading-relaxed max-w-2xl mb-12">
             Each KALVÉ chess set is a singular expression of artistry — sculpted in premium resin and meticulously weighted, transforming the game of kings into a breathtaking centerpiece.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 w-full sm:w-auto">
             <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3">
               Request Details <ArrowRight className="w-4 h-4" />
             </button>
-            <button className="border border-border-gold/30 bg-card text-gold px-8 py-4 text-xs tracking-widest uppercase hover:border-gold transition-colors flex items-center justify-center">
+            <button className="border border-white/30 bg-black/50 text-white px-8 py-4 text-xs tracking-widest uppercase hover:border-white transition-colors flex items-center justify-center backdrop-blur-sm">
               Book Design Consultation
             </button>
           </div>

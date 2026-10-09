@@ -5,15 +5,17 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
       
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
+      <section className="relative min-h-[50vh] flex flex-col items-center justify-center text-center overflow-hidden border-b border-border-gold">
         {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-[center_top] opacity-100 dark:opacity-30" />
-        {/* Left Content */}
-        <div className="px-8 md:px-16 py-12 md:py-16 mx-6 md:mx-16 z-10 relative max-w-2xl bg-background/95 backdrop-blur-md border border-border-gold/20 shadow-xl">
+        <div className="absolute inset-0 bg-[url('/Luxury%20Black-and-Gold%20Executive%20Desk.png')] bg-cover bg-center z-0" />
+        <div className="absolute inset-0 bg-black/65 z-10" />
+        
+        {/* Content */}
+        <div className="relative z-20 max-w-3xl px-6 flex flex-col items-center">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Connect with our atelier.</p>
-          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Private Commissions.</h1>
+          <h1 className="text-5xl md:text-6xl font-serif text-white mb-4">Private Commissions.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Enquire. Collaborate. Create.</h2>
-          <p className="text-foreground text-sm leading-relaxed max-w-lg mb-12">
+          <p className="text-white/80 text-sm leading-relaxed max-w-xl mb-12">
             Whether you seek to acquire a signature piece or commission a bespoke creation tailored to your space, our design team is at your disposal.
           </p>
         </div>

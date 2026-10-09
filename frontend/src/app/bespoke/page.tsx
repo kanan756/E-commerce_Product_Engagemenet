@@ -6,17 +6,18 @@ export default function BespokePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center border-b border-border-gold overflow-hidden bg-background">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden border-b border-border-gold">
         {/* Full-width Background Image */}
-        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-[center_right] opacity-100 dark:opacity-30" />
+        <div className="absolute inset-0 bg-[url('/Opulent%20Blue%20and%20Gold%20Marble%20Coffee%20Table.png')] bg-cover bg-center z-0" />
+        <div className="absolute inset-0 bg-black/65 z-10" />
         
-        {/* Left Content */}
-        <div className="px-8 md:px-16 py-12 md:py-16 mx-6 md:mx-16 z-10 relative max-w-2xl bg-background/95 backdrop-blur-md border border-border-gold/20 shadow-xl">
-          <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-8">Bespoke Commissions.</h1>
-          <p className="text-foreground/80 text-sm md:text-[15px] leading-relaxed max-w-lg mb-12">
+        {/* Content */}
+        <div className="relative z-20 max-w-3xl px-6 flex flex-col items-center">
+          <h1 className="text-5xl md:text-6xl font-serif text-white mb-8">Bespoke Commissions.</h1>
+          <p className="text-white/80 text-sm md:text-[15px] leading-relaxed max-w-2xl mb-12">
             Elevate your space with a one-of-a-kind masterpiece. Designed to your exact specifications, handcrafted by master artisans.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6">
+          <div className="flex flex-col sm:flex-row justify-center gap-6 w-full sm:w-auto">
             <button className="border border-gold text-gold px-8 py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition-colors flex items-center justify-center gap-3 w-max">
               Request a Consultation <ArrowRight className="w-4 h-4" />
             </button>

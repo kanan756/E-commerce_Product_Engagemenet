@@ -44,22 +44,25 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col justify-center px-6 md:px-12 py-20 border-b border-border-gold overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center text-center overflow-hidden">
         {/* Background Subtle Image Slider */}
         <div
-          className="absolute inset-0 bg-cover bg-right opacity-100 dark:opacity-40 z-0 transition-all duration-1000 ease-in-out"
+          className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out z-0"
           style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
         />
-        <div className="relative z-20 max-w-2xl bg-background/95 backdrop-blur-md p-8 md:p-12 border border-border-gold/20 shadow-xl">
+        {/* Dark Overlay over the whole image */}
+        <div className="absolute inset-0 bg-black/65 z-10" />
+
+        <div className="relative z-20 max-w-4xl px-6 flex flex-col items-center">
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
             Collectible Art. Made with Intention.
           </p>
-          <h1 className="text-5xl md:text-7xl font-serif text-foreground leading-tight mb-4">
+          <h1 className="text-5xl md:text-7xl font-serif text-white leading-tight mb-4">
             Collections
             <br />
             <span className="italic text-gold font-light">Rarity. Design. Legacy.</span>
           </h1>
-          <p className="text-foreground text-sm leading-relaxed max-w-md mt-6">
+          <p className="text-white/80 text-sm leading-relaxed max-w-xl mt-6">
             Curated expressions of craftsmanship and rare materials. Each piece is conceived to be timeless, distinctive, and eternally collected.
           </p>
         </div>
