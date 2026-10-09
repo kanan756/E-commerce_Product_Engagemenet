@@ -44,9 +44,15 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-border-gold bg-background">
-        {/* Left Column: Text */}
-        <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 order-2 lg:order-1">
+      <section className="relative min-h-[70vh] grid grid-cols-1 lg:grid-cols-2 border-b border-border-gold overflow-hidden">
+        {/* Full-width Background Image Slider */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-in-out z-0"
+          style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
+        />
+
+        {/* Left Column: Text with Glassmorphism */}
+        <div className="relative z-10 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 bg-background/85 backdrop-blur-md lg:border-r border-border-gold/30 order-2 lg:order-1">
           <p className="text-gold uppercase tracking-widest text-xs mb-6 font-semibold">
             Collectible Art. Made with Intention.
           </p>
@@ -60,11 +66,8 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Right Column: Image Slider */}
-        <div 
-          className="relative w-full min-h-[50vh] lg:min-h-full bg-cover bg-center order-1 lg:order-2 border-b lg:border-b-0 lg:border-l border-border-gold transition-all duration-1000 ease-in-out"
-          style={{ backgroundImage: `url('${heroImages[heroImageIndex]}')` }}
-        />
+        {/* Right Column: Empty to show clear image */}
+        <div className="relative z-10 w-full min-h-[50vh] lg:min-h-full order-1 lg:order-2" />
       </section>
 
       {/* Categories Navigation Bar */}

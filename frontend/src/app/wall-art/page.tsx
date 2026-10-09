@@ -23,9 +23,12 @@ export default function WallArtPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground max-w-[1600px] mx-auto">
 
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 min-h-[70vh] border-b border-border-gold bg-background">
-        {/* Left Column: Text */}
-        <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 order-2 lg:order-1">
+      <section className="relative min-h-[70vh] grid grid-cols-1 lg:grid-cols-2 border-b border-border-gold overflow-hidden">
+        {/* Full-width Background Image */}
+        <div className="absolute inset-0 bg-[url('/Sapphire%20Geode%20Crystal%20Wall%20Clock.png')] bg-cover bg-center z-0" />
+
+        {/* Left Column: Text with Glassmorphism */}
+        <div className="relative z-10 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 bg-background/85 backdrop-blur-md lg:border-r border-border-gold/30 order-2 lg:order-1">
           <p className="text-gold tracking-[0.2em] text-[10px] md:text-xs uppercase mb-8 font-medium">Functional Art. For extraordinary spaces.</p>
           <h1 className="text-5xl md:text-6xl font-serif text-foreground mb-4">Exquisite Wall Art.</h1>
           <h2 className="text-2xl md:text-3xl font-serif text-gold italic mb-8">Time. Texture. Unmistakably Rare.</h2>
@@ -42,8 +45,8 @@ export default function WallArtPage() {
           </div>
         </div>
         
-        {/* Right Column: Image */}
-        <div className="relative w-full min-h-[50vh] lg:min-h-full bg-[url('/Sapphire%20Geode%20Crystal%20Wall%20Clock.png')] bg-cover bg-center order-1 lg:order-2 border-b lg:border-b-0 lg:border-l border-border-gold" />
+        {/* Right Column: Empty to show clear image */}
+        <div className="relative z-10 w-full min-h-[50vh] lg:min-h-full order-1 lg:order-2" />
       </section>
 
       {/* Signature Pieces */}
